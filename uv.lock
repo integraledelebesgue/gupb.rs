@@ -259,6 +259,9 @@ dev = [
     { name = "mypy" },
     { name = "ruff" },
 ]
+workspace = [
+    { name = "gupb" },
+]
 
 [package.metadata]
 
@@ -268,7 +271,7 @@ dev = [
     { name = "mypy", specifier = ">=1.15.0" },
     { name = "ruff", specifier = ">=0.11.2" },
 ]
-workspace = []
+workspace = [{ name = "gupb", virtual = "packages/gupb" }]
 
 [[package]]
 name = "gymnasium"

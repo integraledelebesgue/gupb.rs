@@ -13,7 +13,12 @@ dev = [
     "mypy>=1.15.0",
     "ruff>=0.11.2",
 ]
-workspace = []
+workspace = [
+    "gupb",
+]
+
+[tool.uv.sources]
+gupb = { workspace = true }
 
 [tool.uv.workspace]
 members = ["packages/*"]
