@@ -8,15 +8,8 @@ requires-python = ">=3.11"
 dependencies = []
 
 [dependency-groups]
-dev = [
-    "icecream>=2.1.4",
-    "mypy>=1.15.0",
-    "ruff>=0.11.2",
-]
-workspace = [
-    "gupb",
-    "gupb-oxidizer"
-]
+dev = ["icecream>=2.1.4", "mypy>=1.15.0", "ruff>=0.11.2"]
+workspace = ["gupb", "gupb-oxidizer"]
 
 [tool.uv.sources]
 gupb = { workspace = true }
@@ -24,3 +17,12 @@ gupb-oxidizer = { workspace = true }
 
 [tool.uv.workspace]
 members = ["packages/*"]
+
+[tool.ruff]
+exclude = [".venv", "packages/gupb"]
+line-length = 90
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+docstring-code-format = true
