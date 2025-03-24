@@ -1,0 +1,19 @@
+[project]
+name = "gupb-rl"
+version = "0.1.0"
+description = "Reinforcement learning for GUPB game with a little rusty twist"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "icecream>=2.1.4",
+    "mypy>=1.15.0",
+    "ruff>=0.11.2",
+]
+workspace = []
+
+[tool.uv.workspace]
+members = ["packages/*"]
