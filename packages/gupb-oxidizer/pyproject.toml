@@ -1,0 +1,19 @@
+[project]
+name = "gupb-oxidizer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jan Smółka", email = "jp.smolka@gmail.com" }
+]
+requires-python = ">=3.11.4"
+dependencies = []
+
+[tool.maturin]
+module-name = "gupb_oxidizer._core"
+python-packages = ["gupb_oxidizer"]
+python-source = "src"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"

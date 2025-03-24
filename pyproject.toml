@@ -15,10 +15,12 @@ dev = [
 ]
 workspace = [
     "gupb",
+    "gupb-oxidizer"
 ]
 
 [tool.uv.sources]
 gupb = { workspace = true }
+gupb-oxidizer = { workspace = true }
 
 [tool.uv.workspace]
 members = ["packages/*"]
