@@ -1,3 +1,4 @@
 [submodule "packages/gupb"]
 	path = packages/gupb
 	url = git@github.com:integraledelebesgue/GUPB.git
+	branch = team-registration
