@@ -11,6 +11,9 @@ dependencies = []
 dev = ["icecream>=2.1.4", "mypy>=1.15.0", "ruff>=0.11.2"]
 workspace = ["gupb", "gupb-oxidizer"]
 
+[tool.uv]
+default-groups = ["dev", "workspace"]
+
 [tool.uv.sources]
 gupb = { workspace = true }
 gupb-oxidizer = { workspace = true }
