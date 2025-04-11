@@ -8,7 +8,12 @@ requires-python = ">=3.11"
 dependencies = []
 
 [dependency-groups]
-dev = ["icecream>=2.1.4", "mypy>=1.15.0", "ruff>=0.11.2"]
+dev = [
+    "basedpyright>=1.28.5",
+    "icecream>=2.1.4",
+    "mypy>=1.15.0",
+    "ruff>=0.11.2",
+]
 workspace = ["gupb", "gupb-oxidizer"]
 
 [tool.uv]
@@ -29,3 +34,7 @@ line-length = 90
 quote-style = "single"
 indent-style = "space"
 docstring-code-format = true
+
+[tool.pyright]
+exclude = [".venv", "packages/gupb"]
+include = ["packages/gupb/controller/rustler"]
